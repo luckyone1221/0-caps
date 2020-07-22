@@ -1,0 +1,408 @@
+@import 'css/cssreset-min.css';
+//@import 'style.css';
+
+/* -------------------- global teg -------------------- */
+html {
+  width: 100%;
+  height: 100%;
+  background: #ffffff;
+  -webkit-text-size-adjust: none;
+  -moz-font-feature-settings: "lnum";
+  -webkit-font-feature-settings: "lnum";
+  font-feature-settings: "lnum";
+}
+body {
+  width: 100%;
+  color: #333333;
+  margin: 0;
+}
+@font-face {
+  font-family: Lato-regular; /* Гарнитура шрифта */
+  src: url(fonts/Lato-Regular.ttf); /* Путь к файлу со шрифтом */
+}
+@font-face {
+  font-family: Lato-Semibold; /* Гарнитура шрифта */
+  src: url(fonts/Lato-Semibold.ttf); /* Путь к файлу со шрифтом */
+}
+@font-face {
+  font-family: Lato-Bold; /* Гарнитура шрифта */
+  src: url(fonts/Lato-Bold.ttf); /* Путь к файлу со шрифтом */
+}
+
+a{
+  color: #ffffff;
+  text-decoration: none;
+}
+h1{
+  font-size: 50px;
+  font-family: Lato-Light;
+  line-height: 52px;
+  height: 105px;
+  opacity: 0.1;
+  transition: 2s;
+}
+h2{
+  font-family: Lato-Light;
+  font-size: 42px;
+  text-align: center;
+  display: inline-block;
+  position: relative;
+  width: 100%;
+  color: #26272d;
+  /*margin: 20px 0;*/
+}
+input{
+  color: #333333;
+  font-family: RobotoLight;
+  background-color: inherit;
+  font-size: 14px;
+  text-align: left;
+  transition: 0.5s;
+  border: none;
+  background: none;
+  position: relative;
+  display: block;
+  width: 100%;
+}
+input::-webkit-input-placeholder {color:#333333;}
+input::-moz-placeholder          {color:#333333;}/* Firefox 19+ */
+input:-moz-placeholder           {color:#333333;}/* Firefox 18- */
+input:-ms-input-placeholder      {color:#333333;}
+input:focus::-webkit-input-placeholder {color: transparent;transition: 0.5s;}
+input:focus::-moz-placeholder          {color: transparent;transition: 0.5s;}
+input:focus:-moz-placeholder           {color: transparent;transition: 0.5s;}
+input:focus:-ms-input-placeholder      {color: transparent;transition: 0.5s;}
+input:focus,
+textarea:focus,
+button:focus{
+  outline-color: rgba(255,255,255,0);
+}
+input:focus{
+  border: 2px solid #1b2858;
+}
+.focused {
+  outline: 2px solid #ff4747;
+  margin-bottom: 0 !important;
+}
+.focused_after{
+  color: #ff6565;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 12px;
+  display: inline-block;
+  width: 100%;
+  text-align: left;
+  padding: 5px 0;
+  padding-left: 30px;
+}
+textarea{
+  color: #8a8a8a;
+  width: 230px;
+  height: 150px;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 16px;
+  border: none;
+  background-color: #d3d3d3;
+  text-align: left;
+  -moz-box-shadow:inset 0 3px 9px rgba(0,0,0,0.5);
+  -webkit-box-shadow:inset 0 3px 9px rgba(0,0,0,0.5);
+  box-shadow:inset 0 3px 9px rgba(0,0,0,0.5);
+}
+a{
+  color: #ffffff;
+  text-decoration: none;
+  transition: 0.5s;
+  font-family: SegueUlLight;
+}
+a:hover{
+  color: #f1d032;
+}
+b{
+
+}
+/* -------------------- modifiers and other box -------------------- */
+.content{
+  width: 1200px;
+  margin: auto;
+  text-align: center;
+}
+.form_close{
+  position: absolute;
+  top: -65px;
+  left: 240px;
+  cursor: pointer;
+}
+.r{
+  text-align: right;
+}
+.l{
+  text-align: left;
+}
+/* -------------------- global page -------------------- */
+header,
+#page,
+footer{
+  width: 100%;
+  display: inline-block;
+  min-width: 1200px;
+  font-family: Lato-regular;
+  font-size: 16px;
+}
+header{
+  background: url("img/header_bottom_background.jpg") center top no-repeat;
+  background-size: cover;
+  color: #000000;
+}
+#page{
+  color: #3a3a3a;
+  background-color: #ffffff;
+  text-align: center;
+}
+footer{
+  color: #333333;
+  position: relative;
+  background: #ffffff;
+  display: inline-block;
+  font-size: 14px;
+  font-family: SegueUlLight;
+}
+/* -------------------- header-------------------- */
+/* -------------------- header_top -------------------- */
+
+/* -------------------- header_top END-------------------- */
+/* -------------------- header END -------------------- */
+/* -------------------- body -------------------- */
+/* -------------------- AdvantageLevel -------------------- */
+
+/* -------------------- AdvantageLevel END-------------------- */
+/* -------------------- body END -------------------- */
+/* -------------------- footer -------------------- */
+.footer_top{
+  display: inline-block;
+  vertical-align: top;
+  width: 100%;
+  border-bottom: 1px solid #f4f4f4;
+  padding-bottom: 35px;
+}
+.footer_top_left{
+  float: left;
+  text-align: left;
+}
+.footer_top_left_desc{
+  font-size: 16px;
+  color: #8c8f94;
+  font-family: Lato-regular;
+  margin-top: 15px;
+}
+.footer_top_right{
+  display: inline-block;
+  vertical-align: top;
+  float: right;
+  text-align: right;
+  font-family: Lato-Semibold;
+}
+.footer_top_right_num{
+  color: #1b2858;
+  font-size: 26px;
+  margin-top: 45px;
+}
+.footer_top_right_mail{
+  font-size: 16px;
+  color: #1b2858;
+  font-family: Lato-Semibold;
+}
+.footer_bottom{
+  display: inline-block;
+  vertical-align: top;
+  width: 100%;
+  position: relative;
+  text-align: center;
+  line-height: 45px;
+  height: 45px;
+  font-family: Lato-regular;
+  font-size: 14px;
+  color: #8c8f94;
+  text-transform: uppercase;
+}
+.footer_bottom p{
+  display: inline-block;
+  vertical-align: middle;
+  line-height: normal;
+}
+.footer_bottom b{
+  font-size: 9px;
+  display: inline-block;
+  margin-bottom: 5px;
+}
+/* -------------------- footer END -------------------- */
+/* -------------------- hoverBox -------------------- */
+.hoverBox,
+.hoverBoxTown{
+  background-color: rgba(0, 0, 0, 0.6);
+  height: 100%;
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  display: none;
+  transition: 1s;
+}
+.hoverBox_inform{
+  margin: 2% auto;
+  padding: 30px 15px 30px 15px;
+  background-color: #ffffff;
+  width: 400px;
+  position: relative;
+  text-align: center;
+  color: #252525;
+}
+.hoverBox_inform input{
+  display: inline-block;
+  font-family: Lato-regular;
+  background: #ffffff;
+  font-size: 16px;
+  width: 310px;
+  padding-left: 20px;
+  border: 1px solid #e1e1e1;
+  height: 48px;
+  line-height: 48px;
+  margin-bottom: 20px;
+}
+.hoverBox_inform input:active{
+  border: 1px solid #07a13f;
+}
+.hoverBox_inform_inputName{
+  font-family: Lato-Semibold;
+  font-size: 16px;
+  width: 330px;
+  text-align: left;
+  color: #b5b5b5;
+  margin-bottom: 5px;
+  display: inline-block;
+}
+.hoverBox_inform button{
+  border-radius: 0;
+  width: 330px;
+  font-family: Lato-regular;
+  height: 40px;
+  border: 1px solid #1b2858;
+  color: #ffffff;
+  background: #1b2858;
+  font-size: 16px;
+  text-align: center;
+  cursor: pointer;
+}
+.hoverBox_inform_desc{
+  font-family: Lato-Light;
+  font-size: 16px;
+  text-align: center;
+  color: #b5b5b5;
+  margin: 15px 0 15px 0;
+  line-height: 19px;
+}
+.hoverBoxTown_inform{
+  margin: 2% auto;
+  padding: 30px 15px 45px 15px;
+  background-color: #ffffff;
+  width: 740px;
+  position: relative;
+  text-align: center;
+}
+.hoverBoxTown_inform_name{
+  font-size: 46px;
+  font-family: Lato-Light;
+  width: 100%;
+  margin-bottom: 10px;
+}
+.hoverBoxTown_inform_list{
+  width: 220px;
+  display: inline-block;
+  font-family: Lato-Light;
+  font-size: 16px;
+  color: #333333;
+  vertical-align: top;
+}
+.hoverBoxTown_inform_list li{
+  text-align: left;
+  display: inline-block;
+  width: 190px;
+  padding-left: 30px;
+  position: relative;
+  line-height: 30px;
+  vertical-align: top;
+  cursor: pointer;
+}
+.hoverBoxTown_inform_list li > p{
+  border-bottom: 1px solid #d2d2d2;
+  display: inline-block;
+  line-height: normal;
+}
+.hoverBoxTown_inform_list li:before{
+  content: attr(after_text);
+  font-family: Lato-Bold;
+  color: #07a13f;
+  text-transform: uppercase;
+  position: absolute;
+  left: 0;
+  top: 0;
+  line-height: 28px;
+  text-decoration: none;
+}
+.form_close{
+  position: absolute;
+  left: 745px;
+  top: 10px;
+  width: 13px;
+  height: 13px;
+  display: inline-block;
+  cursor: pointer;
+}
+.hoverBox_inform .form_close{
+  left: 405px;
+}
+/* -------------------- hoverBox END -------------------- */
+
+@media (max-width: 600px) {
+  .content{
+    width: 100%;
+  }
+
+  header,
+  #page,
+  footer{
+    width: 100%;
+    /*width: 375px;*/
+    min-width: 320px;
+  }
+
+  h1{
+    line-height: normal;
+    font-size: 25px;
+    height: auto;
+    padding: 35px 0;
+  }
+
+  h2{
+    font-size: 34px !important;
+    line-height: normal !important;
+  }
+
+  .footer_top_left{
+    float: none;
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+  }
+  .footer_top_right{
+    float: none;
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+  }
+  .footer_bottom{
+    padding: 0 20px;
+    display: block;
+    width: auto;
+  }
+}
