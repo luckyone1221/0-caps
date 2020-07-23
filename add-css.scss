@@ -239,6 +239,7 @@ footer{
   box-sizing: border-box;
 }
 
+
 .modal-win {
   // display: block;
   width: 100%;
@@ -247,7 +248,8 @@ footer{
   overflow: hidden;
   border-radius: 6px;
   border: 5px solid #f0f0f0;
-  padding: 1.25rem 4.5625rem 3.75rem 4.5rem!important;
+  //padding: 1.25rem 4.5625rem 3.75rem 4.5rem!important;
+  padding: 35px !important;
 
   .h3 {
     font-weight: 600;
@@ -290,11 +292,16 @@ footer{
 
   .form-wrap__text {
     font-size: 1.125rem;
+    padding-bottom: 20px;
   }
 
   .form-wrap__input-wrap {
     font-size: 1.125rem;
     margin-bottom: 2.1875rem;
+
+    label{
+      width: 100%;
+    }
   }
 
   .form-wrap label {
@@ -404,8 +411,14 @@ footer{
 
 }
 
+@media screen and (max-width: 540px) {
+  .modal-win{
+    padding: 20px !important;
+  }
+}
+
 #modal-thanks {
-  max-width: 300px;
+  max-width: 320px;
 }
 
 .btn-primary {

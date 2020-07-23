@@ -1,6 +1,11 @@
 $(document).ready(function () {
 
   var JSCCommon = {
+    inputMask() {
+      // mask for input
+      $('input[type="tel"]').attr("pattern", "[+][0-9]{1}[(][0-9]{3}[)][0-9]{3}-[0-9]{2}-[0-9]{2}").inputmask("+9(999)999-99-99");
+    },
+
     tabscostume: function tabscostume(tab) {
       $('.' + tab + '__caption').on('click', '.' + tab + '__btn:not(.active)', function (e) {
         $(this).closest('.' + tab).find('.' + tab + '__content').find(".form-wrap__input").val('').removeAttr("required");
@@ -39,6 +44,20 @@ $(document).ready(function () {
 
   JSCCommon.tabscostume('tabs');
 
+  var gets = function () {
+    var a = window.location.search;
+    var b = new Object();
+    var c;
+    a = a.substring(1).split("&");
+
+    for (var i = 0; i < a.length; i++) {
+      c = a[i].split("=");
+      b[c[0]] = c[1];
+    }
+
+    return b;
+  }(); // form
+
   //form
   $("form").submit(function (e) {
     e.preventDefault();
@@ -74,6 +93,16 @@ $(document).ready(function () {
   $('.modal-pop-up').magnificPopup({
     type:'inline'
   });
+
+  $('.modal-pop-up').click(function () {
+    var clickedFromInp = document.querySelector('.hidden-clicked-from');
+    if (!clickedFromInp) return
+
+    clickedFromInp.value = this.getAttribute('data-product');
+    console.log(clickedFromInp);
+
+    //
+  })
 
   //additional funcs
   //additional funcs

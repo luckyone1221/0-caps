@@ -12,8 +12,9 @@ $mail->CharSet = 'utf-8';
 ///от кого письмо  
 $mail->setFrom('info@info.com','info info');
 
- $mail->addAddress('steelot@mail.ru');
- $mail->addAddress('spike.mgn@gmail.com');
+ //$mail->addAddress('steelot@mail.ru');
+ //$mail->addAddress('spike.mgn@gmail.com');
+ $mail->addAddress('luckyone1221@gmail.com');
  // $mail->addAddress('horenkova369@gmail.com');
 // $mail->addAddress('stab@inbox.support');
 
@@ -25,8 +26,13 @@ $mail->Subject = 'Заявка с сайта СтальОптТорг';
 $time = date('d.m.Y в H:i');
 $html = '
 <table style="width: 100%;">';
+    //clicked-from
+    if (!empty($_POST['clicked-from'])) {
+        $html .= ' <tr style="background-color: #f8f8f8;">  <td style="padding: 10px; border: #e9e9e9 1px solid;">Название товара:</td>   <td style="padding: 10px; border: #e9e9e9 1px solid;">' . $_POST['clicked-from'] . '</b></td></tr>';
+    }
+
     if (!empty($_POST['order'])) {
-        $html .= ' <tr style="background-color: #f8f8f8;">  <td style="padding: 10px; border: #e9e9e9 1px solid;">Вид формы:</td>   <td style="padding: 10px; border: #e9e9e9 1px solid;">' . $_POST['order'] . '</b></td></tr>';
+        $html .= ' <tr style="background-color: #f8f8f8;">  <td style="padding: 10px; border: #e9e9e9 1px solid;">Откуда пришла форма:</td>   <td style="padding: 10px; border: #e9e9e9 1px solid;">' . $_POST['order'] . '</b></td></tr>';
     }
         
     if (!empty($_POST['viber'])) {

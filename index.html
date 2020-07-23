@@ -153,13 +153,19 @@
                     </div>
                 </div>
                 <div class="col-12">
-                    <form class="FirstLevel__form" action="/">
+                    <form class="FirstLevel__form">
+                        <input type="hidden" name="example-input-field">
+                        <input class="order" type="hidden" name="order" value="С верхней формы">
+                        <input class="utm_source" type="hidden" name="utm_source" value="">
+                        <input class="utm_term" type="hidden" name="utm_term" value="">
+                        <input class="utm_medium" type="hidden" name="utm_medium" value="">
+                        <input class="utm_campaign" type="hidden" name="utm_campaign" value="">
                         <div class="FirstLevel__form-content">
                             <p class="howWorkLevel__bigm">
                                 Оставьте контактные данные — мы перезвоним в течение 5 минут и обсудим с вами заказ
                             </p>
                             <input type="text" name="name" placeholder="Имя">
-                            <input type="email" name="mail" placeholder="Номер телефона">
+                            <input type="tel" name="tel" placeholder="Номер телефона">
                             <button class="but" type="submit">
                                 Обсудить заказ
                             </button>
@@ -332,7 +338,7 @@
                             полностью соответствует требованиям ГОСТ сертифицирована, прошла все необходимые
                             санитарно-эпидемиологические исследования.
                         </div>
-                        <a href="#modal-call" class="but modal-pop-up">
+                        <a href="#modal-call" class="but modal-pop-up" data-product="1">
                             Узнать стоимость
                         </a>
                     </div>
@@ -344,7 +350,7 @@
                         <div class="txt-content">
                             Крышка СКО1-82 , с литографированной (с изображением овощей, фруктов, ягод, грибов) изготовлена из белой жести, покрыта пищевым лаком.. Крышка полностью соответствует требованиям ГОСТ сертифицирована, прошла все необходимые санитарно-эпидемиологические исследования.
                         </div>
-                        <a href="#modal-call" class="but modal-pop-up">
+                        <a href="#modal-call" class="but modal-pop-up" data-product="2">
                             Узнать стоимость
                         </a>
                     </div>
@@ -356,7 +362,7 @@
                         <div class="txt-content">
                             Крышка СКО 1-82 для промышленного консервирования, прошла все необходимые санитарно-эпидемиологические исследования. По желанию клиента на крышку может быть нанесено любое литографированное изображение. Крышка соответствует требованиям нормативных. Кольцо викельное.Лак консервный. Жесть консервная пищевая ЭЖК 0,22мм, Гост 13345-85.
                         </div>
-                        <a href="#modal-call" class="but modal-pop-up">
+                        <a href="#modal-call" class="but modal-pop-up" data-product="3">
                             Узнать стоимость
                         </a>
                     </div>
@@ -368,7 +374,7 @@
                         <div class="txt-content">
                             Крышка Твист-офф — представляет собой штампованное металлическое укупорочное средство с упорами для завинчивания, изготовленное из лакированной пищевыми консервными лаками и эмалями белой жести с внутренним уплотнением из материала на основе ПВХ.
                         </div>
-                        <a href="#modal-call" class="but modal-pop-up">
+                        <a href="#modal-call" class="but modal-pop-up" data-product="4">
                             Узнать стоимость
                         </a>
                     </div>
@@ -380,7 +386,7 @@
                         <div class="txt-content">
                             Крышка Твист-офф — представляет собой штампованное металлическое укупорочное средство с упорами для завинчивания, изготовленное из лакированной пищевыми консервными лаками и эмалями белой жести с внутренним уплотнением из материала на основе ПВХ.
                         </div>
-                        <a href="#modal-call" class="but modal-pop-up">
+                        <a href="#modal-call" class="but modal-pop-up" data-product="5">
                             Узнать стоимость
                         </a>
                     </div>
@@ -392,7 +398,7 @@
                         <div class="txt-content">
                             Крышка Твист-офф — представляет собой штампованное металлическое укупорочное средство с упорами для завинчивания, изготовленное из лакированной пищевыми консервными лаками и эмалями белой жести с внутренним уплотнением из материала на основе ПВХ.
                         </div>
-                        <a href="#modal-call" class="but modal-pop-up">
+                        <a href="#modal-call" class="but modal-pop-up" data-product="6">
                             Узнать стоимость
                         </a>
                     </div>
@@ -404,7 +410,7 @@
                         <div class="txt-content">
                             Крышка Твист-офф — представляет собой штампованное металлическое укупорочное средство с упорами для завинчивания, изготовленное из лакированной пищевыми консервными лаками и эмалями белой жести с внутренним уплотнением из материала на основе ПВХ.
                         </div>
-                        <a href="#modal-call" class="but modal-pop-up">
+                        <a href="#modal-call" class="but modal-pop-up" data-product="7">
                             Узнать стоимость
                         </a>
                     </div>
@@ -430,7 +436,7 @@
                         <div class="txt-content">
                             Крышка СКО 1-82 лак, 49+1 — Крышка металлическая закаточная. Изготовлена из белой жести, покрытая пищевыми лаками. Крышка полностью соответствует требованиям ГОСТ Р 51214-98, сертифицирована
                         </div>
-                        <a href="#modal-call" class="but modal-pop-up">
+                        <a href="#modal-call" class="but modal-pop-up" data-product="8">
                             Узнать стоимость
                         </a>
                     </div>
@@ -540,25 +546,21 @@
                     <p class="levelName">
                         Связаться с нами
                     </p>
-                    <form class="FirstLevel__form footer-form" action="/">
+                    <form class="FirstLevel__form footer-form">
+                        <input type="hidden" name="example-input-field">
+                        <input class="order" type="hidden" name="order" value="С футера">
+                        <input class="utm_source" type="hidden" name="utm_source" value="">
+                        <input class="utm_term" type="hidden" name="utm_term" value="">
+                        <input class="utm_medium" type="hidden" name="utm_medium" value="">
+                        <input class="utm_campaign" type="hidden" name="utm_campaign" value="">
                         <div class="FirstLevel__form-content">
                             <input type="text" name="name" placeholder="Имя">
-                            <input type="email" name="mail" placeholder="Номер телефона">
+                            <input type="tel" name="tel" placeholder="Номер телефона">
                             <button class="but" type="submit">
                                 Обсудить заказ
                             </button>
                         </div>
                     </form>
-                    <!--
-                        <form class="contactLevel__form" id="fos" action="">
-                            <input type="text" name="name" placeholder="Ваше имя">
-                            <textarea name="info" id="" cols="30" rows="10" placeholder="Введите сообщение">
-                            </textarea>
-                            <button class="but">
-                                Отправить
-                            </button>
-                        </form>
-                    -->
                 </div>
             </div>
         </div>
@@ -704,9 +706,9 @@
         <!-- </div> -->
     </div>
     <div class="form-wrap modal-win modal-form white-popup" id="modal-call" style="display: inline-block;">
-        <form enctype="multipart/form-data" action="action.php" method="post">
+        <form enctype="multipart/form-data" >
+            <input type="hidden" name="clicked-from" value="" class="hidden-clicked-from">
             <input type="hidden" name="example-input-field">
-            <input class="order" type="hidden" name="order" value="Заявка  с сайта">
             <input class="utm_source" type="hidden" name="utm_source" value="">
             <input class="utm_term" type="hidden" name="utm_term" value="">
             <input class="utm_medium" type="hidden" name="utm_medium" value="">
@@ -784,7 +786,9 @@
 </div>
 
 <!--script_box-->
-<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+<!--<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>-->
+<script type="text/javascript" src="js/jquery.min.js"></script>
+
 <script type="text/javascript" src="js/jquery.fancybox.min.js"></script>
 <script type="text/javascript" src="js/jquery.inputmask.js"></script>
 <script type="text/javascript" src="js/owl.carousel.min.js"></script>
