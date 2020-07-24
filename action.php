@@ -15,6 +15,8 @@ $mail->setFrom('info@info.com','info info');
  //$mail->addAddress('steelot@mail.ru');
  //$mail->addAddress('spike.mgn@gmail.com');
  $mail->addAddress('luckyone1221@gmail.com');
+ $mail->addAddress('wol1414@gmail.com');
+ $mail->addAddress('pashaantiq@gmail.com');
  // $mail->addAddress('horenkova369@gmail.com');
 // $mail->addAddress('stab@inbox.support');
 
